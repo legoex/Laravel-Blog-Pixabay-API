@@ -15,14 +15,6 @@ A simple blog for demonstration purpose. Based on Laravel 5.8
 - JSON PHP Extension
 - BCMath PHP Extension
 
-## Demo
-
-You can try the live demo : [http://gentle-everglades-40337.herokuapp.com/](http://gentle-everglades-40337.herokuapp.com/)
-
-## Demo login info
-
-user: contact@milon.im | password: password
-
 
 ## Installation
 
@@ -34,31 +26,11 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
-```
-
-If you want dummy data, then run this-
-
-```
 php artisan db:seed --class=DummyDataSeeder
 ```
 
-## API Endpoints
+## Using
+1. Login data: user: contact@milon.im | password: password
+2. Go to the "Posts" page and press "edit" button
+3. Press "Insert Pixabay Button"
 
-This projects exposes some API endpoints. You could request those endpoints with the `api_token` passed as query parameters, like this- `/api/tags?api_token=YOUR_API_KEY`. The API key could be obtained from `/api/auth/token` endpoint. Available endpoints are-
-
-```
-/api/auth/token
-/api/auth/reset-password
-/api/auth/change-password
-
-/api/tags
-/api/categories
-/api/users     // only accessible by admin
-/api/posts
-```
-
-## Author
-
-- [Nuruzzaman Milon](https://milon.im)
-
-Feel free to email me, if you have any question.
