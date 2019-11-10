@@ -15,7 +15,7 @@
                     </div>
 
                     <div class="panel-body">
-                        <p>{{ $post->body }}</p>
+                        <p>{{!!$post->body !!}}</p>
                         <p>
                             Category: <span class="label label-success">{{ $post->category->name }}</span> <br>
                             Tags:
