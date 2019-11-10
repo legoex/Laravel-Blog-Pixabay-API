@@ -24,6 +24,9 @@
                                     <button type="submit" class="btn btn-primary">
                                         Update
                                     </button>
+                                    <button id="getImagePopupButton" class="btn btn-success" data-toggle="modal"  data-backdrop="static" data-keyboard="false" data-target="#getImageModal" type="button">
+                                        Insert Pixabay Image
+                                    </button>
                                 </div>
                             </div>
 
@@ -31,7 +34,7 @@
                     </div>
                 </div>
             </div>
-
+        @include('admin.posts._getImage')
         </div>
     </div>
 @endsection
